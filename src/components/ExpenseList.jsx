@@ -14,7 +14,7 @@ const ExpenseList = () => {
         <div className="overflow-x-auto">
             {expenses.length > 0 ? (
                 <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
-                    <thead className="bg-gray-200 text-gray-600">
+                    <thead className="bg-lightblue text-gray-600">
                         <tr>
                             <th className="py-2 px-4 border-b-2 text-left font-semibold">Description</th>
                             <th className="py-2 px-4 border-b-2 text-left font-semibold">Amount</th>

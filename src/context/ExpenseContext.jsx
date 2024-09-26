@@ -8,6 +8,13 @@ export const ExpenseProvider = ({ children }) => {
         return savedExpenses ? JSON.parse(savedExpenses) : [];
     });
 
+    const [userProfile, setUserProfile] = useState({
+        name: 'Nenu Kalathiya', // Default name
+        email: 'nenu@example.com', // Default email
+        phoneNumber: '123-456-7890', // Default phone number
+        photo: 'assets/images/photo.jpeg', // Default profile photo path
+    });
+
     const addExpense = (expense) => {
         const updatedExpenses = [...expenses, expense];
         setExpenses(updatedExpenses);
@@ -29,7 +36,7 @@ export const ExpenseProvider = ({ children }) => {
     };
 
     return (
-        <ExpenseContext.Provider value={{ expenses, addExpense, editExpense, deleteExpense }}>
+        <ExpenseContext.Provider value={{ expenses, addExpense, editExpense, deleteExpense, userProfile }}>
             {children}
         </ExpenseContext.Provider>
     );

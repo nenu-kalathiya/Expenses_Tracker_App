@@ -105,7 +105,7 @@ const EditExpense = () => {
                     <option value="credit">Credit</option>
                 </select>
             </div>
-            <button type="submit" className="w-full bg-blue-500 text-white rounded-lg p-2 hover:bg-blue-600">
+            <button type="submit" className="w-full bg-custom-blue text-white rounded-lg p-2 hover:bg-blue-600">
                 Update Expense
             </button>
         </form>
